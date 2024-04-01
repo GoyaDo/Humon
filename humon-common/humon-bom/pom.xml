@@ -34,6 +34,12 @@
 
             <dependency>
                 <groupId>com.ysmjjsy.goya</groupId>
+                <artifactId>humon-common-identifier</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.ysmjjsy.goya</groupId>
                 <artifactId>humon-common-jpa</artifactId>
                 <version>${revision}</version>
             </dependency>

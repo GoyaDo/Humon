@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.ysmjjsy.goya</groupId>
         <artifactId>humon-common</artifactId>
-        <version>1.0.0</version>
+        <version>${revision}</version>
     </parent>
 
     <artifactId>humon-common-web</artifactId>

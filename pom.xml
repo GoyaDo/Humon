@@ -43,6 +43,8 @@
         <mysql.version>8.1.0</mysql.version>
         <postgresql.version>42.7.2</postgresql.version>
 
+        <jsonwebtoken.version>0.12.5</jsonwebtoken.version>
+
 
         <!-- 插件版本 -->
         <maven-compiler-plugin.verison>3.11.0</maven-compiler-plugin.verison>
@@ -222,6 +224,21 @@
                 <version>${mysql.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-api</artifactId>
+                <version>${jsonwebtoken.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-impl</artifactId>
+                <version>${jsonwebtoken.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-jackson</artifactId>
+                <version>${jsonwebtoken.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

@@ -27,6 +27,11 @@
             <groupId>com.querydsl</groupId>
             <artifactId>querydsl-core</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.ysmjjsy.goya</groupId>
+            <artifactId>humon-common-identifier</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

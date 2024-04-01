@@ -1,7 +1,7 @@
 package com.ysmjjsy.goya.auth.domain;
 
 import com.ysmjjsy.goya.auth.constant.enums.Gender;
-import com.ysmjjsy.goya.auth.convertor.GenderConvertor;
+import com.ysmjjsy.goya.auth.convertor.enums.GenderConvertor;
 import com.ysmjjsy.goya.jpa.base.BaseJpaEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Convert;
@@ -11,6 +11,7 @@ import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.time.LocalDate;
 import java.util.Collection;
 
 /**
@@ -60,6 +61,11 @@ public class CustomerAccount extends BaseJpaEntity implements UserDetails {
             unique = true
     )
     private String email;
+
+    @Column(
+            nullable = false
+    )
+    private LocalDate birthday;
 
     /**
      * 身份证号

@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://172.168.10.194:5432/humon-auth
+    username: root
+    password: root
+
+---
+spring:
+  data:
+    redis:
+      host: 172.168.10.194
+      port: 6379
+      password: wisdom-dev

@@ -12,9 +12,10 @@
     <artifactId>humon-common-redis</artifactId>
 
     <dependencies>
+
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>com.ysmjjsy.goya</groupId>
+            <artifactId>humon-common-base</artifactId>
         </dependency>
 
         <dependency>
@@ -33,6 +34,7 @@
             <artifactId>guava</artifactId>
             <scope>provided</scope>
         </dependency>
+
 
     </dependencies>
 

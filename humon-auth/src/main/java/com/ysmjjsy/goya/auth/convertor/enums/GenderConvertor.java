@@ -1,4 +1,4 @@
-package com.ysmjjsy.goya.auth.convertor;
+package com.ysmjjsy.goya.auth.convertor.enums;
 
 import com.ysmjjsy.goya.auth.constant.enums.Gender;
 import jakarta.persistence.AttributeConverter;

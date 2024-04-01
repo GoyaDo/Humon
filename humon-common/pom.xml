@@ -20,6 +20,7 @@
         <module>humon-common-redis</module>
         <module>humon-common-doc</module>
         <module>humon-common-web</module>
+        <module>humon-common-identifier</module>
     </modules>
 
 

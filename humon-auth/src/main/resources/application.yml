@@ -1,13 +1,12 @@
 server:
   port: 9301
-
+---
 spring:
   application:
     name: humon-auth
+  profiles:
+    active: @profiles.active@
   datasource:
-    url: jdbc:postgresql://172.168.10.194:5432/humon-auth
-    username: root
-    password: root
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 50
@@ -32,7 +31,7 @@ spring:
           batch_size: 1000
         order_inserts: true
 
-
+---
 # 接口文档配置
 springdoc:
   api-docs:
@@ -60,3 +59,10 @@ springdoc:
 #        type: APIKEY
 #        in: HEADER
 #        name: ${sa-token.token-name}
+
+---
+# 日志配置
+logging:
+  level:
+    org.springframework: warn
+  config: classpath:logback-plus.xml
